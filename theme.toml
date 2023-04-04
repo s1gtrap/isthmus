@@ -1,0 +1,12 @@
+name = "Isthmus"
+license = "MIT"
+licenselink = "https://github.com/s1gtrap/isthmus/blob/main/LICENSE"
+description = ""
+homepage = "https://tan.ge/isthmus"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "William Tange"
+  homepage = "https://tan.ge/"

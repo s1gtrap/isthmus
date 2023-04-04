@@ -1,0 +1,8 @@
+{{ define "main" }}
+<main class="bg-white p-4 rounded-top-2 border border-bottom-0 flex-grow-1">
+  <div class="col-md-auto">
+    {{ .Content }}
+  </div>
+  {{- partial "footer.html" . -}}
+</main>
+{{ end }}

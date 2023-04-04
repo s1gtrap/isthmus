@@ -1,0 +1,10 @@
+<nav>
+  <ul class="nav nav-tabs justify-content-center bg-light mt-3 mx-1" style="position:relative;top:1px">
+    {{ $url := .RelPermalink }}
+    {{ range .Site.RegularPages }}
+    <li class="nav-item">
+      <a class="nav-link {{- if eq .RelPermalink $url }} active{{end}}" aria-current="page" href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
