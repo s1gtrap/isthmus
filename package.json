@@ -1,0 +1,17 @@
+{
+  "name": "isthmus",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A minimalist and responsive Hugo theme in the making.",
+  "keywords": [],
+  "license": "MIT",
+  "author": "William Tange <will@brt.sexy> (https://tan.ge/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "postcss-cli": "^10.1.0"
+  }
+}
