@@ -1,1 +1,73 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
+$color-mode-type: media-query;
+
+@font-face {
+  font-family: Hack;
+  src: url(/fonts/Hack.ttf);
+}
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+$font-family-monospace: Hack, monospace;
+$headings-font-family: $font-family-monospace;
+
+$primary: #fd910d;
+$body-bg: #e9ecef;
+$light-bg-subtle-dark: #343a40;
+$nav-tabs-link-active-bg: #f8f9fa;
+$link-decoration: underline dashed;
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+);
+
+$container-max-widths: (
+  sm: 720px,
+);
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+body {
+  background-image: url("/noisy.png");
+}
+
+nav {
+  position: relative;
+  top: 1px;
+}
+
+nav, footer {
+  font-weight: lighter;
+}
+
+main {
+  background-color: $gray-100;
+}
+
+@include color-mode(dark) {
+  main,
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    background-color: $gray-800 !important;
+  }
+
+  .nav-link.active {
+    border-bottom-color: transparent !important;
+  }
+}
+
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/nav";
+
+@import "../../node_modules/bootstrap/scss/utilities/api";

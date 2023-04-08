@@ -8,8 +8,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ (resources.Get "images/favicon-32x32.png").RelPermalink }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ (resources.Get "images/favicon-16x16.png").RelPermalink }}">
   <link rel="manifest" href="{{ (resources.Get "site.webmanifest").RelPermalink }}">
-  {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "themes/isthmus/node_modules")) }}
-  {{ $style := resources.Get "scss/main.scss" | toCSS $options | postCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" >
+
+  {{ $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed") }}
+  {{ $style := resources.Get "scss/main.scss" | toCSS  $options | minify }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
