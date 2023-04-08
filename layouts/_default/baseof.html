@@ -8,8 +8,11 @@
         <div class="d-flex flex-column min-vh-100">
           {{- partial "nav.html" . -}}
           <main class="p-4 rounded-top border border-bottom-0 flex-grow-1">
-            {{- block "main" . }}{{- end }}
-            {{- partial "footer.html" . -}}
+            <div class="d-flex flex-column h-100">
+              <div class="flex-grow-1">
+                {{- block "main" . }}{{- end }}
+              </div>
+              {{- partial "footer.html" . -}}
           </main>
         </div>
       </div>
