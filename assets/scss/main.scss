@@ -11,7 +11,7 @@ $font-family-monospace: Hack, monospace;
 $headings-font-family: $font-family-monospace;
 
 $primary: #fd910d;
-$body-bg: #e9ecef;
+$body-bg: lighten(#e9ecef, 4%);
 $light-bg-subtle-dark: #343a40;
 $nav-tabs-link-active-bg: #f8f9fa;
 $link-decoration: underline dashed;
